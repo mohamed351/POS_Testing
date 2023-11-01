@@ -1,0 +1,10 @@
+<ejs-treegrid [dataSource]='details' [treeColumnIndex]="0" childMapping='children' [allowRowDragAndDrop]="true" [editSettings]="editSettings">
+   <e-columns >
+    <e-column field="productName" headerText="Product Name"></e-column>
+    <e-column field="quantity" editType="numericedit"  headerText="Quantity"></e-column>
+    <e-column field="codeType" editType="dropdownedit" [edit]="editparams"  headerText="Code Type"></e-column>
+    <e-column field="code"   headerText="Code"> </e-column>
+    <e-column field="cost"   headerText="Cost"> </e-column>
+    <e-column field="salesPrice"   headerText="salesPrice"> </e-column>
+   </e-columns>
+</ejs-treegrid>
